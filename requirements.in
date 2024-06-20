@@ -1,8 +1,8 @@
-discord.py==2.2.3
+discord.py==2.3.1
 faiss-cpu==1.7.4
-langchain==0.0.188
-openai==0.27.7
-promptlayer==0.1.84
+langchain==0.0.220
+openai==0.27.8
+promptlayer==0.1.90
 python-dotenv==1.0.0
 python-magic==0.4.27
 tiktoken==0.4.0

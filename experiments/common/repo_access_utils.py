@@ -12,7 +12,7 @@ from pathspec import pathspec
 
 def list_files_in_repo(repo_path: str | Path, additional_gitignore_content: str = "") -> list[Path]:
     """List all files in a repository, excluding files and directories that are ignored by git."""
-    gitignore_content = f".*\n{additional_gitignore_content}\n{_read_gitignore(repo_path)}"
+    gitignore_content = f".*\npoetry.lock\n{additional_gitignore_content}\n{_read_gitignore(repo_path)}"
     spec = pathspec.PathSpec.from_lines("gitwildmatch", gitignore_content.splitlines())
 
     file_list = []

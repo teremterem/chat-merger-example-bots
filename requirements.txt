@@ -21,9 +21,9 @@ charset-normalizer==3.1.0
     # via
     #   aiohttp
     #   requests
-dataclasses-json==0.5.7
+dataclasses-json==0.5.9
     # via langchain
-discord-py==2.2.3
+discord-py==2.3.1
     # via -r requirements.in
 faiss-cpu==1.7.4
     # via -r requirements.in
@@ -35,10 +35,12 @@ idna==3.4
     # via
     #   requests
     #   yarl
-langchain==0.0.188
+langchain==0.0.220
     # via
     #   -r requirements.in
     #   promptlayer
+langchainplus-sdk==0.0.19
+    # via langchain
 marshmallow==3.19.0
     # via
     #   dataclasses-json
@@ -53,21 +55,22 @@ mypy-extensions==1.0.0
     # via typing-inspect
 numexpr==2.8.4
     # via langchain
-numpy==1.24.3
+numpy==1.25.0
     # via
     #   langchain
     #   numexpr
-openai==0.27.7
+openai==0.27.8
     # via -r requirements.in
 openapi-schema-pydantic==1.2.4
     # via langchain
 packaging==23.1
     # via marshmallow
-promptlayer==0.1.84
+promptlayer==0.1.90
     # via -r requirements.in
-pydantic==1.10.8
+pydantic==1.10.10
     # via
     #   langchain
+    #   langchainplus-sdk
     #   openapi-schema-pydantic
 python-dotenv==1.0.0
     # via -r requirements.in
@@ -75,30 +78,33 @@ python-magic==0.4.27
     # via -r requirements.in
 pyyaml==6.0
     # via langchain
-regex==2023.5.5
+regex==2023.6.3
     # via tiktoken
 requests==2.31.0
     # via
     #   langchain
+    #   langchainplus-sdk
     #   openai
     #   promptlayer
     #   tiktoken
-sqlalchemy==2.0.15
+sqlalchemy==2.0.17
     # via langchain
 tenacity==8.2.2
-    # via langchain
+    # via
+    #   langchain
+    #   langchainplus-sdk
 tiktoken==0.4.0
     # via -r requirements.in
 tqdm==4.65.0
     # via openai
-typing-extensions==4.6.2
+typing-extensions==4.7.0
     # via
     #   pydantic
     #   sqlalchemy
     #   typing-inspect
 typing-inspect==0.9.0
     # via dataclasses-json
-urllib3==2.0.2
+urllib3==2.0.3
     # via requests
 yarl==1.9.2
     # via aiohttp
